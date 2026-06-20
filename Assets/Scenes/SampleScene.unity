@@ -153,6 +153,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0b6f3e749cbc44f6e8a19ee8e9dfc103, type: 2}
   - {fileID: 11400000, guid: e8e8e1aab32041c99a960ce25793a0b3, type: 2}
   - {fileID: 11400000, guid: e8e8e1aab32041c99a960ce25793a0b3, type: 2}
+  - {fileID: 11400000, guid: e8e8e1aab32041c99a960ce25793a0b3, type: 2}
+  - {fileID: 11400000, guid: e8e8e1aab32041c99a960ce25793a0b3, type: 2}
+  cardBack: {fileID: 1755939305847214595, guid: 09ba0d03cdf053afb9632deef2c79ba3, type: 3}
 --- !u!4 &262553857
 Transform:
   m_ObjectHideFlags: 0
@@ -162,8 +165,8 @@ Transform:
   m_GameObject: {fileID: 262553855}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.27, y: -1.04, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -415,12 +418,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 509649610033234120, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 509649610033234120, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 509649610033234120, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 509649610033234120, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 509649610033234120, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.01
       objectReference: {fileID: 0}
     - target: {fileID: 509649610033234120, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
       propertyPath: m_LocalPosition.z
@@ -453,6 +468,14 @@ PrefabInstance:
     - target: {fileID: 509649610033234120, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 677986795422085662, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891629944923226374, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8317935223371189737, guid: 67ee9dac17037dd8fabeaff06bda0a30, type: 3}
       propertyPath: tempCardData
