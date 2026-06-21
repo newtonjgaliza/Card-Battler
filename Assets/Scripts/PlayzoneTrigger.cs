@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayzoneTrigger : MonoBehaviour
 {
+    [SerializeField] private PlayerHand playerHand;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +20,7 @@ public class PlayzoneTrigger : MonoBehaviour
         if(collision.TryGetComponent(out Card card))
         {
             Debug.Log("CARD entered");
+            playerHand.PlayCard(card);
         }
     }
 

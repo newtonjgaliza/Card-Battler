@@ -13,6 +13,8 @@ public class PlayerHand : MonoBehaviour
 
     private List<Card> cardsInHand = new List<Card>();
 
+    [SerializeField] private DiscardPile discardPile;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,6 +52,15 @@ public class PlayerHand : MonoBehaviour
         cardComponent.LoadCardData(cardData);
         cardsInHand.Add(cardComponent);
         cardsInHand[slotIndex].transform.SetParent(cardSlots[slotIndex]);
+    }
+
+    public void PlayCard(Card card)
+    {
+        Debug.Log("Play Card");
+        cardsInHand.Remove(card);
+        discardPile.DiscardCard(card.GetCardData());
+        Destroy(card.gameObject);
+        
     }
 
 }

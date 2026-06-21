@@ -27,6 +27,8 @@ public class Card : MonoBehaviour
 
     private static bool isBeingDragged = false;
 
+    private CardData cardData;
+
     void Awake()
     {
         sortingGroup = GetComponent<SortingGroup>();
@@ -48,6 +50,7 @@ public class Card : MonoBehaviour
 
     public void LoadCardData(CardData cardData)
     {
+        this.cardData = cardData;
         illustrationRender.sprite = cardData.illustration;
         cardNameText.text = cardData.cardName;
         descriptionText.text = cardData.description;
@@ -101,4 +104,7 @@ public class Card : MonoBehaviour
         transform.localPosition = originalPosition;
         sortingGroup.sortingOrder = originalSortingOrder;
     }
+
+    public CardData GetCardData() => cardData;
+    
 }
