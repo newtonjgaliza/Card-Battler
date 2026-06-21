@@ -8,7 +8,7 @@ public class DiscardPile : MonoBehaviour
 
     [SerializeField] private GameObject cardPrefab;
 
-    private const float VERTICAL_SPACING = .1f;
+    private const float VERTICAL_SPACING = .25f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

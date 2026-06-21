@@ -118,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 857356068227601474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 0.43, z: 0}
+  m_LocalPosition: {x: -0.327, y: 0.437, z: 0}
   m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -172,7 +172,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2624895990235630889, guid: da444c8a8af4449f18fe92753b7a9a3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -248,7 +248,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -225703960870016858, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -294,8 +294,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Card Description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
+  m_sharedMaterial: {fileID: -225703960870016858, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -407,7 +407,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.43, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.88124996, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5827366684053889941}
@@ -460,9 +460,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5426829010586342398, guid: da444c8a8af4449f18fe92753b7a9a3a, type: 3}
+  m_Sprite: {fileID: 8253797243902632764, guid: da444c8a8af4449f18fe92753b7a9a3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -724,7 +724,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -225703960870016858, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -770,8 +770,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Card Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
+  m_sharedMaterial: {fileID: -225703960870016858, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -853,7 +853,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
 --- !u!1 &6559271601746106903
@@ -973,7 +973,7 @@ Transform:
   m_GameObject: {fileID: 6828402147791935796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1017,7 +1017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.011}
   m_SizeDelta: {x: 3.8, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4173215516870251931
@@ -1045,7 +1045,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -225703960870016858, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1091,8 +1091,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
+  m_sharedMaterial: {fileID: -225703960870016858, guid: 47b3697f3cecc1b0c94c621230761120, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1174,7 +1174,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
 --- !u!1 &7472305188378610209
@@ -1203,8 +1203,8 @@ Transform:
   m_GameObject: {fileID: 7472305188378610209}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.455, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.84375, z: 0.5}
+  m_LocalPosition: {x: 0, y: -0.448, z: 0}
+  m_LocalScale: {x: 0.88187504, y: 0.90312505, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 526647608367303718}
@@ -1323,7 +1323,6 @@ MonoBehaviour:
   actionsText: {fileID: 4125882372291932478}
   hoverScale: 2
   hoverOffset: 2
-  cardCollider: {fileID: 1224098202338349366}
 --- !u!61 &1224098202338349366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1358,7 +1357,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.0034177303}
+  m_Offset: {x: 0, y: -0.1853872}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1368,7 +1367,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.2939279}
+  m_Size: {x: 1, y: 1.6578668}
   m_EdgeRadius: 0
 --- !u!210 &4577895872101476028
 SortingGroup:
