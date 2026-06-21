@@ -12,8 +12,6 @@ public class Card : MonoBehaviour
 
     [SerializeField] private TextMeshPro actionsText;
 
-    [SerializeField] private CardData tempCardData;
-
     private Vector3 originalScale;
 
     private Vector3 originalPosition;
@@ -36,7 +34,6 @@ public class Card : MonoBehaviour
     {
         originalScale = transform.localScale;
         originalPosition = transform.localPosition;
-        LoadCardData(tempCardData);
         originalSortingOrder = sortingGroup.sortingOrder;
     }
 

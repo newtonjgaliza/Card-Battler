@@ -1281,6 +1281,7 @@ GameObject:
   - component: {fileID: 509649610033234120}
   - component: {fileID: 8317935223371189737}
   - component: {fileID: 1224098202338349366}
+  - component: {fileID: 4577895872101476028}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -1321,6 +1322,8 @@ MonoBehaviour:
   descriptionText: {fileID: 5233027728290118711}
   actionsText: {fileID: 4125882372291932478}
   tempCardData: {fileID: 11400000, guid: 0b6f3e749cbc44f6e8a19ee8e9dfc103, type: 2}
+  hoverScale: 2
+  hoverOffset: 2
 --- !u!61 &1224098202338349366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1367,3 +1370,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.2939279}
   m_EdgeRadius: 0
+--- !u!210 &4577895872101476028
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8646696734699692920}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
