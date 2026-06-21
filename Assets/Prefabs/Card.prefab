@@ -1321,9 +1321,9 @@ MonoBehaviour:
   cardNameText: {fileID: 5573637633788525840}
   descriptionText: {fileID: 5233027728290118711}
   actionsText: {fileID: 4125882372291932478}
-  tempCardData: {fileID: 11400000, guid: 0b6f3e749cbc44f6e8a19ee8e9dfc103, type: 2}
   hoverScale: 2
   hoverOffset: 2
+  cardCollider: {fileID: 1224098202338349366}
 --- !u!61 &1224098202338349366
 BoxCollider2D:
   m_ObjectHideFlags: 0

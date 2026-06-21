@@ -30,6 +30,7 @@ public class DiscardPile : MonoBehaviour
         GameObject discardedCard = Instantiate(cardPrefab, transform);
         discardedCard.GetComponent<Card>().LoadCardData(cardData);
         SortingGroup sortingGroup = discardedCard.GetComponent<SortingGroup>();
+        discardedCard.GetComponent<Card>().SetInteractable(false);
         sortingGroup.sortingOrder = discardPile.Count - 1;
         
         discardedCard.transform.SetParent(transform);

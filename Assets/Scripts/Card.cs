@@ -29,9 +29,12 @@ public class Card : MonoBehaviour
 
     private CardData cardData;
 
+    private Collider2D cardCollider;
+
     void Awake()
     {
         sortingGroup = GetComponent<SortingGroup>();
+        cardCollider = GetComponent<Collider2D>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -106,5 +109,15 @@ public class Card : MonoBehaviour
     }
 
     public CardData GetCardData() => cardData;
+
+    private void OnDestroy()
+    {
+        isBeingDragged = false;
+    }
+
+    public void SetInteractable(bool interactable)
+    {
+        cardCollider.enabled = interactable;
+    }
     
 }
