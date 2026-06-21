@@ -9,6 +9,8 @@ public class Deck : MonoBehaviour
     
     private const float VERTICAL_SPACING = .1f;
 
+    [SerializeField] private PlayerHand playerHand;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -52,5 +54,15 @@ public class Deck : MonoBehaviour
             drawPile[i] = drawPile[randomIndex];
             drawPile[randomIndex] = card;
         }
+    }
+
+    private void OnMouseDown()
+    {
+        if(drawPile.Count <= 0)
+        {
+            return;
+        }
+        
+        playerHand.DrawNextCard();
     }
 }
