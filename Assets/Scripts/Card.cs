@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
+using UnityEngine.InputSystem;
 
 public class Card : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class Card : MonoBehaviour
     [SerializeField] private float hoverScale = 2f;
 
     [SerializeField] private float hoverOffset = 2f;
+
+    private static bool isBeingDragged = false;
 
     void Awake()
     {
@@ -53,6 +56,11 @@ public class Card : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if(isBeingDragged)
+        {
+            return;
+        }
+
         Debug.Log("Mouse Entered!");
         transform.localScale = originalScale * hoverScale;
         transform.localPosition += new Vector3(0, hoverOffset, 0);
@@ -61,7 +69,34 @@ public class Card : MonoBehaviour
 
     private void OnMouseExit()
     {
+        if(isBeingDragged)
+        {
+            return;
+        }
+
         Debug.Log("Mouse Exit");
+        transform.localScale = originalScale;
+        transform.localPosition = originalPosition;
+        sortingGroup.sortingOrder = originalSortingOrder;
+    }
+
+    private void OnMouseDrag()
+    {
+        isBeingDragged = true;
+        gameObject.transform.position = GetMousePosition();
+    }
+
+    private Vector3 GetMousePosition()
+    {
+        Vector3 mousePosition = Mouse.current.position.ReadValue();
+        mousePosition.z = transform.position.z - Camera.main.transform.position.z;
+        return Camera.main.ScreenToWorldPoint(mousePosition);
+    }
+
+    private void OnMouseUp()
+    {
+        Debug.Log("Mouse up");
+        isBeingDragged = false;
         transform.localScale = originalScale;
         transform.localPosition = originalPosition;
         sortingGroup.sortingOrder = originalSortingOrder;
