@@ -154,7 +154,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8e8e1aab32041c99a960ce25793a0b3, type: 2}
   - {fileID: 11400000, guid: 0b6f3e749cbc44f6e8a19ee8e9dfc103, type: 2}
   - {fileID: 11400000, guid: e8e8e1aab32041c99a960ce25793a0b3, type: 2}
-  - {fileID: 11400000, guid: e8e8e1aab32041c99a960ce25793a0b3, type: 2}
+  - {fileID: 11400000, guid: 0b6f3e749cbc44f6e8a19ee8e9dfc103, type: 2}
   cardBack: {fileID: 1755939305847214595, guid: 09ba0d03cdf053afb9632deef2c79ba3, type: 3}
 --- !u!4 &262553857
 Transform:

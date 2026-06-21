@@ -12,6 +12,7 @@ public class Deck : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Shuffle();
         DeckDrawVisuals();
     }
 
@@ -39,6 +40,17 @@ public class Deck : MonoBehaviour
         {
             GameObject newCardBack = Instantiate(cardBack, transform);
             newCardBack.transform.localPosition = new Vector3(0f, -i * VERTICAL_SPACING, 0f);
+        }
+    }
+
+    public void Shuffle()
+    {
+        for(int i = 0; i < drawPile.Count; i++)
+        {
+            CardData card = drawPile[i];
+            int randomIndex = Random.Range(i, drawPile.Count);
+            drawPile[i] = drawPile[randomIndex];
+            drawPile[randomIndex] = card;
         }
     }
 }
