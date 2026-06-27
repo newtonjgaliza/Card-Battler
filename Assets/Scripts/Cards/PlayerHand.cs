@@ -56,11 +56,11 @@ public class PlayerHand : MonoBehaviour
 
     public void PlayCard(Card card)
     {
-        Debug.Log("Play Card");
         cardsInHand.Remove(card);
         discardPile.DiscardCard(card.GetCardData());
         Destroy(card.gameObject);
         RepositionCards();
+        PlayerEvents.CardPlayed(card.GetCardData());
     }
 
     private void RepositionCards()

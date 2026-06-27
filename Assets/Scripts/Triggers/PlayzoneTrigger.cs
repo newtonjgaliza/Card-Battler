@@ -19,7 +19,6 @@ public class PlayzoneTrigger : MonoBehaviour
     {
         if(collision.TryGetComponent(out Card card))
         {
-            Debug.Log("CARD entered");
             playerHand.PlayCard(card);
         }
     }
@@ -28,7 +27,7 @@ public class PlayzoneTrigger : MonoBehaviour
     {
         if(collision.TryGetComponent(out Card card))
         {
-            Debug.Log("CARD left");
+            
         }
     }
 }
