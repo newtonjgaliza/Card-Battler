@@ -6,10 +6,14 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject playerSprite;
     private Vector3 originalPosition;
     private Animator animationController;
+    private Health health;
+    private ParticleSystem healVFX;
 
     private void Awake()
     {
         animationController = playerSprite.GetComponent<Animator>();
+        health = GetComponent<Health>();
+        healVFX = playerSprite.GetComponentInChildren<ParticleSystem>();
     }
 
     private void Start()
@@ -36,12 +40,25 @@ public class Player : MonoBehaviour
             //attack
             Attack(cardData);
         }
+
+        if(cardData.healPower > 0)
+        {
+            //heal
+            Heal(cardData);
+        }
     }
 
     private void Attack(CardData cardData)
     {
         Debug.Log("Attack! " + cardData.attackPower);
         StartCoroutine(PlayerAttackAnimation());
+    }
+
+    private void Heal(CardData cardData)
+    {
+        Debug.Log("Heal! " + cardData.healPower);
+        health.HealDamage(cardData.healPower);
+        healVFX.Play();
     }
 
     private IEnumerator PlayerAttackAnimation()
